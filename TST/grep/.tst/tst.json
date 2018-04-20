@@ -1,0 +1,18 @@
+{
+  "files": {
+    "grep.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Grep - CC (UFCG)\n\npalavra = raw_input()\nN = int(raw_input())\n\nfor i in range(N):\n\tfrase = raw_input()\n\tfor j in range(len(frase)):\n\t\tif (palavra[0] == frase[j] and\n\t\t    palavra[1] == frase[j+1] and\n\t\t    palavra[2] == frase[j+2]):\n\t\t\t\tprint frase\n\t\t\t\tbreak\n",
+      "name": "grep.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 4.75,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c84fe99abce1d40603fa81398b1616d4",
+  "iid": 6285962384506880,
+  "activity_revision": "2.0.1"
+}

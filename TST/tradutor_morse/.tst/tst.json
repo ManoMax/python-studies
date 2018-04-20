@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ntradutor_morse = getattr(undertest, 'tradutor_morse', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n       assert tradutor_morse(['.--.', '-.--', '-', '....', '---', '-.']) == 'python'\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "tradutor_morse.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Tradutor Morse - CC (UFCG)\n\ndef tradutor_morse(lista):\n\tsaida = ''\n\tfor i in range(len(lista)):\n\t\tif lista[i] == '.-':\n\t\t\tsaida += 'a'\n\t\telif lista[i] == '-...':\n\t\t\tsaida += 'b'\n\t\telif lista[i] == '-.-.':\n\t\t\tsaida += 'c'\n\t\telif lista[i] == '-..':\n\t\t\tsaida += 'd'\n\t\telif lista[i] == '.':\n\t\t\tsaida += 'e'\n\t\telif lista[i] == '..-.':\n\t\t\tsaida += 'f'\n\t\telif lista[i] == '--.':\n\t\t\tsaida += 'g'\n\t\telif lista[i] == '....':\n\t\t\tsaida += 'h'\n\t\telif lista[i] == '..':\n\t\t\tsaida += 'i'\n\t\telif lista[i] == '.---':\n\t\t\tsaida += 'j'\n\t\telif lista[i] == '-.-':\n\t\t\tsaida += 'k'\n\t\telif lista[i] == '.-..':\n\t\t\tsaida += 'l'\n\t\telif lista[i] == '--':\n\t\t\tsaida += 'm'\n\t\telif lista[i] == '-.':\n\t\t\tsaida += 'n'\n\t\telif lista[i] == '---':\n\t\t\tsaida += 'o'\n\t\telif lista[i] == '.--.':\n\t\t\tsaida += 'p'\n\t\telif lista[i] == '--.-':\n\t\t\tsaida += 'q'\n\t\telif lista[i] == '.-.':\n\t\t\tsaida += 'r'\n\t\telif lista[i] == '...':\n\t\t\tsaida += 's'\n\t\telif lista[i] == '-':\n\t\t\tsaida += 't'\n\t\telif lista[i] == '..-':\n\t\t\tsaida += 'u'\n\t\telif lista[i] == '...-':\n\t\t\tsaida += 'v'\n\t\telif lista[i] == '.--':\n\t\t\tsaida += 'w'\n\t\telif lista[i] == '-..-':\n\t\t\tsaida += 'x'\n\t\telif lista[i] == '-.--':\n\t\t\tsaida += 'y'\n\t\telif lista[i] == '--..':\n\t\t\tsaida += 'z'\n\treturn saida\n\t\nassert tradutor_morse(['.--.', '-.--', '-', '....', '---', '-.']) == 'python'\n",
+      "name": "tradutor_morse.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d4769045f96176926fff456e6bb309e1",
+  "iid": 5838796897648640,
+  "activity_revision": "1.0.0"
+}

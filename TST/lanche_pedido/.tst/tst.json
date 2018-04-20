@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nlanchemaispedido = getattr(undertest, 'lanchemaispedido', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo_1(self):\n    ines = ['tapioca','tapioca','salada','bolo','misto','tapioca', 'tapioca']\n    assert lanchemaispedido(ines) == 'tapioca'\n    \n\n   def test_exemplo_2(self):\n       marcos = ['suco','coxinha','suco','misto','folhado']\n       assert lanchemaispedido(marcos) == None\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "lanche_pedido.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Samuel Lucas V. Matos\n# Matricula: Nenhuma\n# Quest\u00e3o: Lanche mais Pedido - CC (UFCG)\n\ndef lanchemaispedido(elements):\n\ttap, sal, bol, mis, suc, fol, cox = 0, 0, 0, 0, 0, 0, 0\n\tresult = []\n\tfor i in range(len(elements)):\n\t\tif elements[i] == 'tapioca':\n\t\t\ttap += 1\n\t\t\tresult.append(tap)\n\t\telif elements[i] == 'salada':\n\t\t\tsal += 1\n\t\t\tresult.append(sal)\n\t\telif elements[i] == 'bolo':\n\t\t\tbol += 1\n\t\t\tresult.append(bol)\n\t\telif elements[i] == 'misto':\n\t\t\tmis += 1\n\t\t\tresult.append(mis)\n\t\telif elements[i] == 'suco':\n\t\t\tsuc += 1\n\t\t\tresult.append(suc)\n\t\telif elements[i] == 'folhado':\n\t\t\tfol += 1\n\t\t\tresult.append(fol)\n\t\telif elements[i] == 'coxinha':\n\t\t\tcox += 1\n\t\t\tresult.append(cox)\n\t\t\t\n\tmaior = 0\n\tfor j in range(len(result)):\n\t\taux = result[j]\n\t\tif aux >= maior:\n\t\t\tmaior = aux\n\t\t\tposicao = j\n\n\tif maior > len(elements) / 2.:\n\t\tsaida = elements[posicao]\n\telse:\n\t\tsaida = None\n\treturn saida\n\t\nines = ['tapioca','tapioca','salada','bolo','misto','tapioca', 'tapioca']\nmarcos = ['suco','coxinha','suco','misto','folhado']\n\nassert lanchemaispedido(ines) == 'tapioca'\nassert lanchemaispedido(marcos) == None\n",
+      "name": "lanche_pedido.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "130e7143dfb4bca68c3765b037fcb014",
+  "iid": 5830965561655296,
+  "activity_revision": "1.0.3"
+}

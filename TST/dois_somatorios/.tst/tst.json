@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dois_somatorios.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Produto de Dois Somat\u00f3rios - CC (UFCG)\n\nnumero = raw_input()\nsoma_par = 0\nsoma_impar = 0\n\nfor i in range(len(numero)):\n\tif i % 2 == 0:\n\t\tnum = numero[i]\n\t\tsoma_par += int(num)\n\telse:\n\t\tnum = numero[i]\n\t\tsoma_impar += int(num)\n\t\t\nproduto = soma_par * soma_impar\nprint \"%05d\" % produto\n",
+      "name": "dois_somatorios.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 1,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7204f382719fcb3b63b75e0acd06287e",
+  "iid": 5136162528165888,
+  "activity_revision": "1.0.1"
+}

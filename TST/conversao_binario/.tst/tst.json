@@ -1,0 +1,18 @@
+{
+  "files": {
+    "conversao_binario.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Convers\u00e3o de N\u00famero na Base 2 para a Base 10 - CC (UFCG)\n\nN = raw_input()\nsoma = 0\n\nfor i in range(len(N)-1, -1, -1):\n\tnum = int(N[i-1])\n\tif i == 8:\n\t\tdiv = 256\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 7:\n\t\tdiv = 128\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 6:\n\t\tdiv = 64\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 5:\n\t\tdiv = 32\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 4:\n\t\tdiv = 16\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 3:\n\t\tdiv = 8\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 2:\n\t\tdiv = 4\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 1:\n\t\tdiv = 2\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\telif i == 0:\n\t\tdiv = 1\n\t\tresultado = num * div\n\t\tprint \"%d * %d = %d\" % (num, div, resultado)\n\tsoma += resultado\nprint \"%d(2) = %d(10)\" % (int(N), soma)\n",
+      "name": "conversao_binario.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "283d6c0f922af6aa828c887bb144f0ae",
+  "iid": 4800265282650112,
+  "activity_revision": "1.0.4"
+}

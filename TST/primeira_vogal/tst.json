@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "problema\n",
+      "output": "o\n"
+    }
+  ]
+}

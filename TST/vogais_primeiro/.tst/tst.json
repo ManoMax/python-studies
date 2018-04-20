@@ -1,0 +1,18 @@
+{
+  "files": {
+    "vogais_primeiro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Vogais Primeiro - CC (UFCG)\n\ndef vogais_primeiro(word):\n\ta, e, i, o, u = 'a', 'e', 'i', 'o', 'u'\n\torder = ''\n\taccumulator = []\n\tfor i in range(len(word)):\n\t\tif word[i].lower() == a or word[i].lower() == e or word[i].lower() == i or word[i].lower() == o or word[i].lower() == u:\n\t\t\torder += word[i]\n\t\telse:\n\t\t\taccumulator.append(word[i])\n\n\tfor i in range(len(accumulator)):\n\t\torder += accumulator[i]\n\treturn order\n\t\nassert vogais_primeiro('exemplo') == 'eeoxmpl'\nassert vogais_primeiro('Programacao 1') == 'oaaaoPrgrmc 1'\n",
+      "name": "vogais_primeiro.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nvogais_primeiro = getattr(undertest, 'vogais_primeiro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert vogais_primeiro(\"exemplo\") == \"eeoxmpl\"\n    \n    def test_exemplo_2(self):\n        assert vogais_primeiro(\"Programacao 1\") == \"oaaaoPrgrmc 1\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ecf7c74f41cf8e132d4f1d4c72d922f9",
+  "iid": 5342504836661248,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_rotulo_perdido = getattr(undertest, 'encontra_rotulo_perdido', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['skol', 'brahma', 'itaipava']\n        l2 = ['itaipava', 'brahma']\n        assert encontra_rotulo_perdido(l1,l2) == 'skol'\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "falta_um.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Falta um - CC (UFCG)\n\ndef encontra_rotulo_perdido(env, rec):\n\tfor i in range(len(env)):\n\t\tif env[i] not in rec:\n\t\t\treturn env[i]\n\nl1 = ['skol', 'brahma', 'itaipava']\nl2 = ['itaipava', 'brahma']\nassert encontra_rotulo_perdido(l1,l2) == 'skol'\n",
+      "name": "falta_um.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f8da9ad9a0641053a57f8811a12da759",
+  "iid": 4953953775124480,
+  "activity_revision": "1.0.0"
+}

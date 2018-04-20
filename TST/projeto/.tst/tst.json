@@ -1,0 +1,18 @@
+{
+  "files": {
+    "projeto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Matos\n# Matricula: 117110060\n# Atividade: Sele\u00e7\u00e3o Projeto\n\nCRE = float(raw_input())\nmeses = int(raw_input())\nnota = float(raw_input())\n\nif CRE >= 7.0 and meses >= 6:\n\tif nota <= 3.0:\n\t\tprint \"Candidato classificado.\"\n\tif nota > 3.0:\n\t\tprint \"Candidato aprovado.\"\n\nif meses < 6:\n\tif CRE >= 7.0:\n\t\tprint \"Candidato eliminado. Experi\u00eancia abaixo do limite.\"\n\tif CRE < 7.0:\n\t\tprint \"Candidato eliminado. CRE e experi\u00eancia abaixo do limite.\"\n\t\t\nif CRE < 7.0:\n\tif meses >= 6:\n\t\tprint \"Candidato eliminado. CRE abaixo do limite.\"\n\tif meses < 6:\n\t\tprint \"Candidato eliminado. CRE e experi\u00eancia abaixo do limite.\"\n\t\t\n",
+      "name": "projeto.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 36.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b2691a2cd5e41290aebb0bc5b384c6ce",
+  "iid": 5822019614539776,
+  "activity_revision": "1.0.1"
+}

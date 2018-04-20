@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsubtrai_polinomios = getattr(undertest, 'subtrai_polinomios', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        p1 = [-5, 4, 3]\n        p2 = [-1, 0, 2, 0, 0, 0, 5]\n        assert subtrai_polinomios(p1, p2) == [-4, 4, 1, 0, 0, 0, -5]\n\n    def test_exemplo_2(self):\n        p1 = [-5, 4, 3]  # 3x2 + 4x - 5\n        p2 = [-4, 2, 3]  # 3x2 + 2x - 4\n        assert subtrai_polinomios(p1, p2) == [-1, 2]  # 2x - 1\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "sub_polinomio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Subtra\u00e7\u00e3o de Polinomios - CC (UFCG)\n\ndef subtrai_polinomios(p1, p2):\n\tp3 = []\n\ta = 0\n\twhile True:\n\t\tif a <= len(p1)-1 and a <= len(p2)-1:\n\t\t\tb = p1[a] - p2[a]\n\t\telif a <= len(p1)-1 and a > len(p2)-1:\n\t\t\tb = p1[a]\n\t\telif a > len(p1)-1 and a <= len(p2)-1:\n\t\t\tb = - p2[a]\n\t\telif a > len(p1)-1 and a > len(p2)-1:\n\t\t\td = len(p3)-1\n\t\t\tif p3[d] == 0:\n\t\t\t\tp3.remove(0)\n\t\t\treturn p3\n\t\tp3.append(b)\n\t\ta += 1\n\np1 = [-5, 4, 3]\np2 = [-1, 0, 2, 0, 0, 0, 5]\nassert subtrai_polinomios(p1, p2) == [-4, 4, 1, 0, 0, 0, -5]\n\np1 = [-5, 4, 3]\np2 = [-4, 2, 3]\nassert subtrai_polinomios(p1, p2) == [-1, 2]\n",
+      "name": "sub_polinomio.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8773910515e736c05c661b49b26bc232",
+  "iid": 6135899809120256,
+  "activity_revision": "1.0.0"
+}

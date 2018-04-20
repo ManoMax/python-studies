@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "678.0\n",
+      "output": "O valor da contribuição do INSS a ser pago pelo empregador é de R$ 81.36\nO valor da contribuição do INSS a ser pago pelo empregado é de R$ 54.24\n"
+    },
+    {
+      "category": "public",
+      "input": "3500.0\n",
+      "output": "O valor da contribuição do INSS a ser pago pelo empregador é de R$ 420.00\nO valor da contribuição do INSS a ser pago pelo empregado é de R$ 385.00\n"
+    }
+  ]
+}

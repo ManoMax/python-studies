@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        votacao.append('uma,nao,543,marina,PPPP')\n        votacao.append('uma,sim,5,joao,PPPP')\n        votacao.append('uma,nao,543,julio,P')\n        votacao.append('uma,sim,543,carlos,PBBBB')\n        votacao.append('uma,sim,543,juliana,PP')\n        votacao.append('uma,sim,99,joao,PPPP')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    conta_votos = undertest.conta_votos\n    del sys.argv[-1]\n    unittest.main()\n"
+    },
+    "assembleia.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Analytics Assembleia - CC (UFCG)\n\ndef conta_votos(votacoes, id_votacao):\n\tcont_yes = 0\n\tcont_no = 0\n\tfor i in range(len(votacoes)):\n\t\tdata = votacoes[i].split(',')\n\t\tif id_votacao == int(data[2]):\n\t\t\tif data[1] == 'sim':\n\t\t\t\tcont_yes += 1\n\t\t\telif data[1] == 'nao':\n\t\t\t\tcont_no += 1\n\treturn [cont_yes, cont_no]\n\nvotacao = []\nvotacao.append('greve geral,sim,543,joao,servidor')\nvotacao.append('greve geral,nao,543,marina,servidor')\nvotacao.append('indicativo de greve,sim,5,joao,professor')\nvotacao.append('paralisa\u00e7\u00e3o,nao,543,julio,professor')\nvotacao.append('paralisa\u00e7\u00e3o,sim,543,carlos,professor')\nvotacao.append('paralisa\u00e7\u00e3o,sim,543,juliana,professor')\nvotacao.append('lei 1329,sim,99,joao,servidor')\n\nassert conta_votos(votacao, 543) == [3,2]\n",
+      "name": "assembleia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cf3439bc62659a1a77ac60c179850e57",
+  "iid": 6365119369969664,
+  "activity_revision": "1.0.0"
+}

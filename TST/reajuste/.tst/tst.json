@@ -1,0 +1,13 @@
+{
+  "files": {
+    "reajuste.py": {
+      "category": "answer",
+      "data": "atual = float(raw_input(\"Valor atual? \"))\nnovo = float(raw_input(\"Novo valor? \"))\nporcentagem = (novo * 100 / atual)\nreajuste = porcentagem - 100\nprint \"Reajuste de %.1f%%\" % reajuste\n",
+      "name": "reajuste.py"
+    }
+  },
+  "iid": 5056549605081088,
+  "kind": "assignment",
+  "activity_revision": "1.1.0",
+  "name": null
+}

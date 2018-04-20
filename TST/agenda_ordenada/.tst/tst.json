@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agenda_ordenada.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Agenda Ordenada - CC (UFCG)\n\nnomes = []\nwhile True:\n\tentrada = raw_input()\n\tif entrada == '####': break\n\tnomes.append(entrada)\n\nordem = []\nfor i in range(len(nomes)-2, -1, -1):\n\tnome = nomes[i]\n\tcomp = nomes[i-1]\n\tfor j in range(len(nome)+len(comp)):\n\t\tif nome[j] > comp[j]:\n\t\t\taux = nomes[i]\n\t\t\tnomes[i] = nomes[i-1]\n\t\t\tnomes[i-1] = aux\n\t\t\tbreak\n\t\t\t\nprint nomes\n",
+      "name": "agenda_ordenada.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e38224b579bf47b52cf7d9bede90b9c8",
+  "iid": 5600710083215360,
+  "activity_revision": "1.0.0"
+}

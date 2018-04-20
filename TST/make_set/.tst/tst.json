@@ -1,0 +1,12 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmake_set = getattr(undertest, 'make_set', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_example(self):\n        l = [1, 2, 1]\n        make_set(l)\n        assert l == [1, 2]\n\n    def test_exemplo2(self):\n        l = [1]\n        make_set(l)\n        assert l == [1]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "iid": 6464022425632768,
+  "kind": "assignment",
+  "activity_revision": "1.0.0",
+  "name": null
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "razao3.py": {
+      "category": "answer",
+      "data": "for i in range(4, 3002, 3):\n\tprint i\n",
+      "name": "razao3.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 3,\n      \"vhalstead\": 0.0,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6a5316bd0d84e6e7dff35e5d631f2313",
+  "iid": 5974628392501248,
+  "activity_revision": "1.0.1"
+}

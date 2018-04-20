@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nquantos_comeram = getattr(undertest, 'quantos_comeram', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        assert quantos_comeram(10, [10, 10]) == 10\n        assert quantos_comeram(12, [10, 10]) == 10\n        assert quantos_comeram(2, [10, 10]) == 0\n        assert quantos_comeram(5, [2, 3, 5]) == 5\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "quantos_comeram.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Quantos Comeram? - CC (UFCG)\n\ndef quantos_comeram(N, fila):\n\tsoma = 0\n\tfor i in range(len(fila)):\n\t\tif N >= fila[i]:\n\t\t\tsoma += fila[i]\n\t\t\tN -= fila[i]\n\t\telse: break\n\treturn soma\n\nassert quantos_comeram(10, [10, 10]) == 10\nassert quantos_comeram(12, [10, 10]) == 10\nassert quantos_comeram(2, [10, 10]) == 0\nassert quantos_comeram(5, [2, 3, 5]) == 5\n",
+      "name": "quantos_comeram.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "307ec7b8687d56af1c12058565de19bf",
+  "iid": 5248940450512896,
+  "activity_revision": "1.0.1"
+}

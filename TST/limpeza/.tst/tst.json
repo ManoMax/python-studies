@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limpeza.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nservico = int(raw_input())\n\nif servico == 1:\n\ttamanho = int(raw_input())\n\tpreco = 80 * tamanho\n\tprint \"R$\", str(preco) + \",00\"\n\tif preco >= 200:\n\t\tprint \"Brinde!\"\n\t\nif servico == 2:\n\ttamanho = int(raw_input())\n\tpreco = 50 * tamanho\n\tprint \"R$\", str(preco) + \",00\"\n\tif preco >= 200:\n\t\tprint \"Brinde!\"\n\t\nif servico == 3:\n\tprint \"R$ 50,00\"\n",
+      "name": "limpeza.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 66.61,\n      \"header\": 2\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "71ec34df766b125489716b4b45d84414",
+  "iid": 5345731095298048,
+  "activity_revision": "1.0.3"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_palavras = getattr(undertest, 'conta_palavras', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert conta_palavras(5, \"zero:um:dois:tres:quatro:cinco\") == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "conta_palavras.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Conta Palavras - CC (UFCG)\n\ndef conta_palavras(num, entrada):\n\tentrada = entrada.split(':')\n\tcont = 0\n\tfor i in range(len(entrada)):\n\t\tif len(entrada[i]) >= num:\n\t\t\tcont += 1\n\treturn cont\n\t\nassert conta_palavras(5, \"zero:um:dois:tres:quatro:cinco\") == 2\n",
+      "name": "conta_palavras.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c4f09721e5472ce1d941c70721a4bbe2",
+  "iid": 4940190820859904,
+  "activity_revision": "1.0.0"
+}

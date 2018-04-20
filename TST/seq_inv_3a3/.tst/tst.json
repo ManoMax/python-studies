@@ -1,0 +1,13 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninverte3a3 = getattr(undertest, 'inverte3a3', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_3(self):\n        assert inverte3a3(\"paisimtio\") == \"tiosimpai\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "iid": 5211469276774400,
+  "kind": "assignment",
+  "activity_revision": "1.0.0",
+  "name": null
+}

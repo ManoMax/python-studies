@@ -1,0 +1,18 @@
+{
+  "files": {
+    "insere_ordenado_imposto.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Insere Ordenado Impostor - CC (UFCG)\n\ndef insere_ordenado_impostor(l):\n\ttroca = True\n\twhile troca:\n\t\tfor i in range(len(l)-1, -1, -1):\n\t\t\tprint l[i], l[i-1]\n\t\t\tif l[i] < l[i-1]:\n\t\t\t\tl[i-1], l[i] = l[i], l[i-1]\n\t\t\t\ttroca = False\n\t\t\t\tbreak\n\tprint l\n\treturn l\n\nl = [1, 2, 4, 3, 5, 6, 7, 11]\ninsere_ordenado_impostor(l)\nassert l == [1, 2, 3, 4, 5, 6, 7, 11]\n\nl = [1, 9, 11, 3, 14]\ninsere_ordenado_impostor(l)\nassert l == [1, 3, 9, 11, 14]\n",
+      "name": "insere_ordenado_imposto.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninsere_ordenado_impostor = getattr(undertest, 'insere_ordenado_impostor', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l = [1, 2, 4, 3, 5, 6, 7, 11]\n        insere_ordenado_impostor(l)\n        assert l == [1, 2, 3, 4, 5, 6, 7, 11]\n\n    def test_ex2(self):\n        l = [1, 9, 11, 3, 14]\n        insere_ordenado_impostor(l)\n        assert l == [1, 3, 9, 11, 14]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "226b327bd797acc62dc45e8a95d430fa",
+  "iid": 6125409192116224,
+  "activity_revision": "1.0.7"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "divisores.py": {
+      "category": "answer",
+      "data": "num = raw_input()\nx = 0\n\nfor possibilidades in range(1, int(num)):\n\tx += 1\n\tif int(num) % possibilidades == 0:\n\t\tprint x\n",
+      "name": "divisores.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "be68aa725e26b561115cbf4575c2030c",
+  "iid": 6126460049817600,
+  "activity_revision": "1.1.0"
+}

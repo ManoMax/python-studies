@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "500.00\n560.00\n",
+      "output": "Valor atual? Novo valor? Reajuste de 12.0%\n"
+    },
+    {
+      "category": "public",
+      "input": "500.00\n545.00\n",
+      "output": "Valor atual? Novo valor? Reajuste de 9.0%\n"
+    }
+  ]
+}

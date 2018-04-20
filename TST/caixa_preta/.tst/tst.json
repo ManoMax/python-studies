@@ -1,0 +1,14 @@
+{
+  "files": {
+    "caixa_preta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Caixa Preta Descartando Leituras - CC (UFCG)\n\ncont1 = 0\ncont2 = 0\ncont3 = 0\nwhile True:\n\tentrada = raw_input().split()\n\tfor i in range(len(entrada)):\n\t\tpeso = int(entrada[0])\n\t\tcombustivel = int(entrada[1])\n\t\taltitude = int(entrada[2])\n\tcont1 += 1\n\tcont2 += 1\n\tcont3 += 1\n\tif peso < 0:\n\t\tprint \"dado inconsistente. peso negativo.\"\n\t\tcont1 -= 1\n\t\tcont2 -= 1\n\t\tcont3 -= 1\n\t\tbreak\n\telif combustivel < 0:\n\t\tprint \"dado inconsistente. combust\u00edvel negativo.\"\n\t\tcont2 -= 1\n\t\tcont3 -= 1\n\t\tbreak\n\telif altitude < 0:\n\t\tprint \"dado inconsistente. altitude negativa.\"\n\t\tcont3 -= 1\n\t\tbreak\nprint \"peso: %d\\ncombust\u00edvel: %d\\naltitude: %d\" % (cont1, cont2, cont3)\n",
+      "name": "caixa_preta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6bb4fba89578b92ae62f9946792e3dd3",
+  "iid": 5849305139118080,
+  "activity_revision": "1.0.1"
+}

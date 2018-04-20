@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4\n123\n0298\n1429\n999999\n",
+      "type": "io",
+      "name": "exemplo",
+      "output": "---\n2 aceito(s)\n123\n999999\n2 descartado(s)\n0298\n1429\n"
+    },
+    {
+      "category": "public",
+      "input": "1\n9999\n",
+      "type": "io",
+      "name": "exemplo2",
+      "output": "---\n1 aceito(s)\n9999\n0 descartado(s)\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nseleciona_questoes = getattr(undertest, 'seleciona_questoes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        todas = [1, 2, 3, 4, 5]\n        utilizadas = [3, 4]\n        seleciona_questoes(todas, utilizadas)\n        assert todas == [1, 2, 5]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "questao_mt.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Quest\u00f5es para mt - CC (UFCG)\n\ndef seleciona_questoes(todas, util):\n\tj = 0\n\twhile j <= len(util)-1:\n\t\tfor i in range(len(todas)-1, -1, -1):\n\t\t\tif todas[i] == util[j]:\n\t\t\t\ttodas.pop(i)\n\t\tj += 1\n\ntodas = [1, 2, 3, 4, 5]\nutil = [3, 4]\nseleciona_questoes(todas, util)\nassert todas == [1, 2, 5]\n\ntodas = [1, 2, 3, 4, 5]\nutil = []\nseleciona_questoes(todas, util)\nassert todas == [1, 2, 3, 4, 5]\n\ntodas = []\nutil = [1, 2]\nseleciona_questoes(todas, util)\nassert todas == []\n\ntodas = [1, 1, 1, 2]\nutil = [1]\nseleciona_questoes(todas, util)\nassert todas == [2]\n\ntodas = [2]\nutil = [1]\nseleciona_questoes(todas, util)\nassert todas == [2]\n",
+      "name": "questao_mt.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "89f11dc0d3c7e551f15fc83ddc3bf297",
+  "iid": 5211183124578304,
+  "activity_revision": "1.0.0"
+}

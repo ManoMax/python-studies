@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "0.45\n0.20\n0.30\n3\n120\n",
+      "output": "Digite o preço da unidade do tijolo (Em reais): Digite a altura do tijolo (Em metros): Digite o comprimento do tijolo (Em metros): Digite a altura das paredes (Em metros): Digite o comprimento das paredes (Em metros): O número total de tijolos é 6000.0 e o orçamento final é de R$ 2700.0\n"
+    }
+  ]
+}

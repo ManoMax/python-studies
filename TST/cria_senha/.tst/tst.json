@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cria_senha.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Cria Senha - CC (UFCG)\n\ndef criaSenhaForte(palavra):\n\tsaida = '(('\n\tfor i in range(len(funcao)):\n\t\tif funcao[i].upper() == 'O':\n\t\t\tsaida += '0'\n\t\telif funcao[i].upper() == 'I':\n\t\t\tsaida += '1'\n\t\telif funcao[i].upper() == 'L':\n\t\t\tsaida += '1'\n\t\telif funcao[i].upper() == 'E':\n\t\t\tsaida += '3'\n\t\telif funcao[i].upper() == 'A':\n\t\t\tsaida += '4'\n\t\telif funcao[i].upper() == 'B':\n\t\t\tsaida += '6'\n\t\telif funcao[i].upper() == 'T':\n\t\t\tsaida += '7'\n\t\telse:\n\t\t\tsaida += funcao[i]\n\tsaida += '))'\n\treturn saida\n\t\t\nwhile True:\n\tentrada = raw_input()\n\tdados = entrada.split()\n\tfuncao = dados[0]\n\tif entrada == '***': break\n\t\n\tif dados[1] == 'fraco':\n\t\tsaida = \"((%s))\" % dados[0]\n\t\t\n\telif dados[1] == 'forte':\n\t\tsaida = criaSenhaForte(funcao)\n\t\t\n\tprint saida\n",
+      "name": "cria_senha.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d09ea6f01fe8ebf2067e9c3be31b53ce",
+  "iid": 5829772634488832,
+  "activity_revision": "1.0.0"
+}

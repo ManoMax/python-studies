@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10\n6\n29\n3\nfim\n",
+      "output": "12.00\n1 10\n2 6\n4 3\n"
+    }
+  ]
+}

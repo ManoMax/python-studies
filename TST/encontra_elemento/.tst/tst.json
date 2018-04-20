@@ -1,0 +1,18 @@
+{
+  "files": {
+    "encontra_elemento.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Encontra elemento - CC (UFCG)\n\nN = int(raw_input())\nsequencia = raw_input().split()\nx = 0\n\nfor i in range(len(sequencia)):\n\tnum = int(sequencia[i])\n\tif num == N:\n\t\tx = 1\nif x == 1:\n\tprint \"sim\"\nelse:\n\tprint \"n\u00e3o\"\n",
+      "name": "encontra_elemento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 8,\n      \"vhalstead\": 4.75,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "570523740b1d1c52b1bc823f3e8ab5a4",
+  "iid": 5593305224052736,
+  "activity_revision": "1.0.1"
+}

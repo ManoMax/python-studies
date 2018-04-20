@@ -1,0 +1,18 @@
+{
+  "files": {
+    "ultimos_impares.py": {
+      "category": "answer",
+      "data": "n = int(raw_input())\nlimite = int(raw_input())\nsequencia = []\nsoma = 0\n\nfor i in range(n):\n\tsequencia.append(int(raw_input()))\n\nfor num in sequencia:\n\tsoma += num\n\tif soma <= limite:\n\t\tif num % 2 == 1:\n\t\t\tultimo_impar = num\n\telif soma > limite:\n\t\tif num % 2 == 1:\n\t\t\tsoma = ultimo_impar + num\nprint soma\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n'''\nif soma + num <= limite:\n\t\tif num % 2 == 1:\n\t\t\tsoma += num\n\t\t\tultimo_impar = num\n\tif limite == 0:\n\t\tsoma = 0\n\t\tultimo_impar = 0\n\t\tbreak\n\tif soma + num > limite:\n\t\tif num % 2 == 1:\n\t\t\tsoma = ultimo_impar + num\nprint soma\n'''\n",
+      "name": "ultimos_impares.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 70.32,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "161e81a2c7091754cf4d44464835e9da",
+  "iid": 5846454891446272,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Carmita\n24\n09\n1989\nMaroca\n12\n09\n1995\n",
+      "output": "Carmita\n"
+    },
+    {
+      "category": "public",
+      "input": "Carol\n20\n12\n2001\nMarcos\n20\n12\n2001\n",
+      "output": "nenhuma\n"
+    }
+  ]
+}

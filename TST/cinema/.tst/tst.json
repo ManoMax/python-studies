@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cinema.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\ndia = raw_input(\"Dia da semana? \")\norcamento = float(raw_input(\"Orcamento? R$ \"))\nadultos = int(raw_input(\"Numero de adultos? \"))\ncriancas = int(raw_input(\"Numero de criancas? \"))\npizza = float(raw_input(\"Preco da pizza? R$ \"))\nrefrigerante = float(raw_input(\"Preco do refrigerante? R$ \"))\nestacionamento = float(raw_input(\"Preco do estacionamento? R$ \"))\ncinema = float(raw_input(\"Preco do ingresso do cinema? R$ \"))\n\ngastos_alimentacao = pizza + refrigerante\ngastos_cinema = (cinema + 2) * adultos + (cinema / 2 + 2) * criancas\ngastos_total = gastos_alimentacao + gastos_cinema + estacionamento\nindividual = gastos_total / (adultos + criancas)\nsaldo = orcamento - gastos_total\n\nprint \"========== Despesas de \" + str(dia) + \" ==========\"\nprint \"Despesas com alimentacao: R$ \" + str(gastos_alimentacao)\nprint \"Despesas com cimena: R$ \" + str(gastos_cinema)\nprint \"Despesas por pessoa: R$ \" + str(individual)\nprint \"Saldo disponivel: \" + str(saldo)\n",
+      "name": "cinema.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1e25483493402a9225b849e004abd70f",
+  "iid": 5072580570513408,
+  "activity_revision": "1.0.1"
+}

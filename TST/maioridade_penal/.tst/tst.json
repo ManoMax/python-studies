@@ -1,0 +1,19 @@
+{
+  "files": {
+    "maioridade_penal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Samuel Lucas V. Matos\n# Matricula: Nenhuma\n# Quest\u00e3o: Maioridade Penal Fun\u00e7\u00e3o - CC (UFCG)\n\ndef maioridade_penal(names, ages):\n\tname = names.split()\n\tage = ages.split()\n\tresult = ''\n\t\n\tfor i in range(len(age)):\n\t\tif int(age[i]) >= 18:\n\t\t\tif result == '':\n\t\t\t\tresult += name[i]\n\t\t\telse:\n\t\t\t\tresult += ' ' + name[i]\n\t\n\treturn result\n\nassert maioridade_penal('Jansen Italo Ana', '14 21 60') == \"Italo Ana\"\n",
+      "name": "maioridade_penal.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmaioridade_penal = getattr(undertest, 'maioridade_penal', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico_1(self):\n        assert maioridade_penal(\"Jansen Italo Ana\",\"14 21 60\") == \"Italo Ana\"\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2470e8d74182ff08331d824aae034513",
+  "iid": 6093365380644864,
+  "activity_revision": "1.0.0"
+}

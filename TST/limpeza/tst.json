@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "1\n5\n",
+      "output": "R$ 400,00\nBrinde!\n"
+    },
+    {
+      "category": "public",
+      "input": "3\n",
+      "output": "R$ 50,00\n"
+    },
+    {
+      "category": "public",
+      "input": "1\n2\n",
+      "output": "R$ 160,00\n"
+    }
+  ]
+}

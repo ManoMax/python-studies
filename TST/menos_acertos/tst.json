@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4\n......f\n..fffff\n....fff\n..ff...\n",
+      "type": "io",
+      "name": "publico",
+      "output": "O aluno 2 errou 5 teste(s).\n"
+    },
+    {
+      "category": "public",
+      "input": "2\nff\n..\n",
+      "type": "io",
+      "name": "similar",
+      "output": "O aluno 1 errou 2 teste(s).\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 4.75,\n      \"header\": 4\n    }\n  ]\n}"
+    },
+    "primeira_vogal.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Imprime Primeira Vogal - CC (UFCG)\n\npalavra = raw_input()\na = 'A'\ne = 'E'\ni = 'I'\no = 'O'\nu = 'U'\n\nfor m in range(len(palavra)):\n\tletra = palavra[m]\n\tif letra.upper() in [a, e, i, o, u]:\n\t\tsaida = letra\n\t\tbreak\n\telse:\n\t\tsaida = \"-\"\nprint saida\n",
+      "name": "primeira_vogal.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "470d2302b480460f6e345d9c1937c298",
+  "iid": 5816298315448320,
+  "activity_revision": "1.1.3"
+}

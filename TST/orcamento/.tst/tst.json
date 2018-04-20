@@ -1,0 +1,14 @@
+{
+  "files": {
+    "orcamento.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nPreco = float(raw_input(\"Digite o pre\u00e7o da unidade do tijolo (Em reais): \"))\naltura = float(raw_input(\"Digite a altura do tijolo (Em metros): \"))\ncomprimento = float(raw_input(\"Digite o comprimento do tijolo (Em metros): \"))\nAltura = float(raw_input(\"Digite a altura das paredes (Em metros): \"))\nComprimento = float(raw_input(\"Digite o comprimento das paredes (Em metros): \"))\nTijolosA = Altura / altura\nTijolosC = Comprimento / comprimento\nTotal = TijolosA * TijolosC\nOrcamento = Total * Preco\n\nprint \"O n\u00famero total de tijolos \u00e9 %.1f e o or\u00e7amento final \u00e9 de R$ %.1f\" % (Total, Orcamento)\n",
+      "name": "orcamento.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "22e9313a945b2da1246288aa8a33dbf6",
+  "iid": 5289607583236096,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\n",
+      "output": "    o\n   ooo\n  ooooo\n ooooooo\nooooooooo\n    o\n"
+    }
+  ]
+}

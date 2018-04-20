@@ -1,0 +1,19 @@
+{
+  "files": {
+    "busca_linear.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Busca Linear - CC (UFCG)\n\ndef busca(seq, valor):\n\tpos = -1\n\tfor i in range(len(seq)):\n\t\tif seq[i] == valor:\n\t\t\tpos = i\n\t\t\tbreak\n\treturn pos\n\nseq = [8, 9, 2, 3, 6, 10, 7, 9]\nassert busca(seq, 6) == 4\nassert busca(seq, 4) == -1\nassert busca(seq, 9) == 1\n",
+      "name": "busca_linear.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbusca = getattr(undertest, 'busca', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       seq = [10, 7, 8, 6, 2, 31, 12]\n       assert busca(seq, 8) == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "29e2af09c87bc782f0fb5d17e767a5aa",
+  "iid": 5807261100277760,
+  "activity_revision": "1.0.0"
+}

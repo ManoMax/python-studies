@@ -1,0 +1,18 @@
+{
+  "files": {
+    "metodo_join.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Samuel Lucas V. Matos\n# Matricula: Nenhuma\n# Quest\u00e3o: Minha Implementa\u00e7\u00e3o para o M\u00e9todo join - CC (UFCG)3\n\ndef meu_join(deli, seq):\n\tresult = ''\n\tfor i in range(len(seq)):\n\t\tif i == 0:\n\t\t\tresult += seq[i]\n\t\telse:\n\t\t\tresult += deli + seq[i]\n\treturn result\n\t\nassert meu_join('*', 'abc') == 'a*b*c'\nassert meu_join('*', [\"a\", \"b\", \"c\"]) == 'a*b*c'\n",
+      "name": "metodo_join.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmeu_join = getattr(undertest, 'meu_join', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert meu_join(\"*\", \"abc\") == \"a*b*c\"\n\n   def test_exemplo1(self):\n     assert meu_join(\"*\", [\"a\", \"b\", \"c\"]) == \"a*b*c\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fa7bac1d316b9dcf079f9cd944230b94",
+  "iid": 5820222640488448,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "1256BL\n10:43\n12A\nB\n70.00\n100.00\n",
+      "output": "### Cartão de Embarque ###\nIdentificador do voo: 1256BL. Horário: 10:43. Assento: 12A. Portão: B.\nTotal de Imposto: 30.0%.\n"
+    }
+  ]
+}

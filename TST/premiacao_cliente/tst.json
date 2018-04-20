@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "joao 10\njulio 1000\njulio 2\njoao 45.2\njoao 10\n",
+      "output": "joao foi o vencedor. Comprou mais de duas vezes no período.\n"
+    },
+    {
+      "category": "public",
+      "input": "joao 12\njulio 4000\n",
+      "output": "julio foi o vencedor. Comprou mais R$ 2000.00 no período.\n"
+    }
+  ]
+}

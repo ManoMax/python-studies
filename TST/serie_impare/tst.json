@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": null,
+      "output": "1\n*\n*\n7\n*\n11\n13\n*\n17\n19\n*\n23\n*\n*\n29\n31\n*\n*\n37\n*\n41\n43\n*\n47\n49\n*\n53\n*\n*\n59\n61\n*\n*\n67\n*\n71\n73\n*\n77\n79\n*\n83\n*\n*\n89\n91\n*\n*\n97\n*\n101\n"
+    }
+  ]
+}

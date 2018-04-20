@@ -1,0 +1,18 @@
+{
+  "files": {
+    "calcula_dv.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Calcula DV - CC (UFCG)\n\nn = raw_input()\nsoma_par = 0\nsoma_impar = 0\nmult = 0\n\nfor i in range(len(n)):\n\tif i % 2 == 0:\n\t\tsoma_par += int(n[i])\n\telse:\n\t\tsoma_impar += int(n[i])\n\tmult = soma_par * soma_impar\n\trest = mult % 11\n\nif rest == 10:\n\tprint \"%s-X\" % n\nelse:\n\tprint \"%s-%d\" % (n, rest)\n",
+      "name": "calcula_dv.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 11,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1d5c9936fafd985cde19167685cd1765",
+  "iid": 5258216908783616,
+  "activity_revision": "1.1.2"
+}

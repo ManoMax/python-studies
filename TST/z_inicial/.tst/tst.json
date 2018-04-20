@@ -1,0 +1,14 @@
+{
+  "files": {
+    "z_inicial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Z Inicial - CC (UFCG)\n\ndef z_inicial(lista):\n\tcont = 0\n\tfor i in range(len(lista)):\n\t\tpalavra = lista[i]\n\t\tfor j in range(len(palavra)):\n\t\t\tif palavra[0].upper() == 'Z':\n\t\t\t\tcont += 1\n\t\t\t\tbreak\n\treturn cont\n\nlista = raw_input().split()\nprint z_inicial(lista)\n",
+      "name": "z_inicial.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "65d734dcfb8ed96feecd8abf886b44d6",
+  "iid": 6418216842690560,
+  "activity_revision": "1.0.0"
+}

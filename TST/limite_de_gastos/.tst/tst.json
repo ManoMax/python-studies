@@ -1,0 +1,18 @@
+{
+  "files": {
+    "limite_de_gastos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Limite de gastos - CC (UFCG)\n\nlimit = float(raw_input())\n\nwhile True:\n\tsoma = 0\n\tentrada = raw_input()\n\tif entrada == 'fim': break\n\tdados = entrada.split()\n\tfor i in dados:\n\t\tsoma += float(i)\n\tif len(dados) != 0:\n\t\tmedia = soma / len(dados)\n\t\tif media < limit / 2.: break\n\t\telif media >= limit:\n\t\t\tprint entrada\n",
+      "name": "limite_de_gastos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 2,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ddcabf8fca734278407e5c85ef0a9908",
+  "iid": 5304459009720320,
+  "activity_revision": "1.0.2"
+}

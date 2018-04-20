@@ -1,0 +1,18 @@
+{
+  "files": {
+    "porta_eletronica.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Porta Eletr\u00f4nica - CC (UFCG)\n\nregister = []\n\nwhile True:\n\t\n\tcont = 0\n\tentrada = raw_input().split()\n\tif entrada[0] == 'S': break\t\n\tuser = entrada[1]\n\tif entrada[0] == 'R':\n\t\tregister.append(user[0])\n\telif entrada[0] == 'P':\n\t\tfor u in range(len(register)):\n\t\t\tif user[0] == register[u]:\n\t\t\t\tcont += 1\n\t\tprint cont\n\t\t\n",
+      "name": "porta_eletronica.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 14,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "aee623dced70fc1401a5697b1a69502f",
+  "iid": 5808206328627200,
+  "activity_revision": "1.0.4"
+}

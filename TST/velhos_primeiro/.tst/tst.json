@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nidosos_inicio = getattr(undertest, 'idosos_inicio', None)\n\n\nclass AcceptanceTests(unittest.TestCase):\n\n   def test_exemplo(self):\n\t\tfila = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]\n\t\tself.assertEquals( idosos_inicio(fila), None )\n\t\tself.assertEquals( fila, [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "velhos_primeiro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Mais Velhos Primeiro - CC (UFCG)\n\ndef idosos_inicio(fila):\n\tdata = fila\n\trow = []\n\tbelow = []\n\tx = 1\n\ty = 0\n\twhile True:\n\t\tnew_smaller = 35\n\t\tif x == 1:\n\t\t\tfor i in range(len(data)):\n\t\t\t\tif int(data[i]) > 35:\n\t\t\t\t\trow.append(int(data[i]))\n\t\t\t\telif int(data[i]) == 35:\n\t\t\t\t\ty = 1\n\t\t\t\telse:\n\t\t\t\t\tbelow.append(int(data[i]))\n\t\t\n\t\tfor i in range(len(below)):\n\t\t\tif below == []: break\n\t\t\tsmaller = int(below[i])\n\t\t\tif smaller <= new_smaller:\n\t\t\t\tnew_smaller = smaller\n\n\t\tx = 0\n\t\tif y == 1:\n\t\t\trow.append(35)\n\t\t\ty = 0\n\t\tif below != []:\n\t\t\tbelow.remove(new_smaller)\n\t\t\trow.append(new_smaller)\n\t\telse: break\n\treturn row\n\nfila = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]\nidosos_inicio(fila)\nprint idosos_inicio(fila)\nassert idosos_inicio(fila) == [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34]\n\n",
+      "name": "velhos_primeiro.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8c8152b8a965b1616c251ab37498f3f8",
+  "iid": 5815239941554176,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "José azul\nJoana verde\nTonho vermelho\nMaria laranja\nSeverino vermelho\nAna vermelho \nfim\n",
+      "output": "Tonho\nSeverino\nAna\nMaria\nJoana\nJosé\n---\nvermelho: 3\nlaranja: 1\namarelo: 0\nverde: 1\nazul: 1\n---\n"
+    }
+  ]
+}

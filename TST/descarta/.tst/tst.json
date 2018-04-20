@@ -1,0 +1,18 @@
+{
+  "files": {
+    "descarta.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matr\u00edcula: 117110060\n# Atividade: Descarta Coincidentes\n\nquantidade = int(raw_input())\nvalores = []\ndescartados = []\naceitos = []\ncontadorD = 0\ncontadorA = 0\n\nfor i in range(quantidade):\n\tvalores.append(raw_input())\nprint \"---\"\n\nfor numero in range(len(valores)):\n\tindividual = valores[numero]\n\taceitos.append(individual)\n\tfor algarismo in range(len(individual)):\n\t\tif int(algarismo) == int(individual[algarismo]):\n\t\t\tdescartados.append(individual)\n\t\t\taceitos.remove(individual)\n\t\t\tcontadorD += 1\n\t\t\tbreak\ncontadorA = quantidade - contadorD\n\t\t\t\nprint \"%d aceito(s)\" % contadorA\nfor i in aceitos:\n\tprint i\nprint \"%d descartado(s)\" % contadorD\nfor i in descartados:\n\tprint i\n",
+      "name": "descarta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "76d8906a605c9673307453d68b258e93",
+  "iid": 6455769822134272,
+  "activity_revision": "1.0.1"
+}

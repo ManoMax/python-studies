@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "3\n-7\n2\n",
+      "output": "x1 = 2.00\nx2 = 0.33\n"
+    },
+    {
+      "category": "public",
+      "input": "5\n-6\n5\n",
+      "output": "sem raizes reais\n"
+    },
+    {
+      "category": "public",
+      "input": "-1\n4\n-4\n",
+      "output": "x = 2.00\n"
+    }
+  ]
+}

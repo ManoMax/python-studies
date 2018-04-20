@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsoma_intervalo = getattr(undertest, 'soma_intervalo', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico_1(self):\n       assert soma_intervalo(10,10) == 10\n\n   def test_basico_2(self):\n       assert soma_intervalo(5,15) == 110\n\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "soma_intervalo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: A Primeira Letra em Caixa Alta - CC (UFCG)\n\ndef soma_intervalo(a, b):\n\tsoma = 0\n\tfor i in range(a, b+1, 1):\n\t\tsoma += i\n\treturn soma\n\nassert soma_intervalo(5, 15) == 110\nassert soma_intervalo(10, 10) == 10\n",
+      "name": "soma_intervalo.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e3c802232ea202c48904a161b1e9a5d6",
+  "iid": 5833257329360896,
+  "activity_revision": "1.0.1"
+}

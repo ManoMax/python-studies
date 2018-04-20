@@ -1,0 +1,19 @@
+{
+  "files": {
+    "squeeze.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Sequeeze - CC (UFCG)\n\ndef squeeze(nums):\n\tfor i in range(len(nums)-1, 0, -1):\n\t\tif nums[i] == nums[i-1]:\n\t\t\tnums.pop(i)\n\treturn nums\n\nnums = [3, 1, 1, 1, 4, 7, 3, 3, 2, 7]\nassert squeeze(nums) == [3, 1, 4, 7, 3, 2, 7]\n",
+      "name": "squeeze.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsqueeze= getattr(undertest, 'squeeze', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n      nums = [3, 1, 1, 1, 4, 7, 3, 3, 2, 7]\n      assert squeeze(nums) == [3, 1, 4, 7, 3, 2, 7]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b9c1cbbbfb8375378939ef40904c7c30",
+  "iid": 5233201542856704,
+  "activity_revision": "1.0.0"
+}

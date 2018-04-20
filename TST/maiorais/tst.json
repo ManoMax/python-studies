@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2\n1\n",
+      "output": "Campinense\n"
+    },
+    {
+      "category": "public",
+      "input": "2\n2\n",
+      "output": "Empate\n"
+    },
+    {
+      "category": "public",
+      "input": "2\n4\n",
+      "output": "Treze\n"
+    }
+  ]
+}

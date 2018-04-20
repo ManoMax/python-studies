@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "alo fraco\nalo forte           \n***\n",
+      "output": "((alo))\n((410))\n"
+    },
+    {
+      "category": "public",
+      "input": "antonio forte\n***\n",
+      "output": "((4n70n10))\n"
+    }
+  ]
+}

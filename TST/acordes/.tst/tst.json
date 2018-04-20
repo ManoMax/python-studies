@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nacordes = getattr(undertest, 'acordes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        m1 = ['c', 'd', 'dm']\n        m2 = ['c', 'a']\n        \n        assert acordes(m1, m2) == ['c', 'd', 'dm', 'a']\n        assert m1 == ['c', 'd', 'dm']\n        assert m2 == ['c', 'a']\n        \n        m1 = ['c', 'd']\n        m2 = ['c', 'a']\n        assert acordes(m1, m2) == ['c', 'd', 'a']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "acordes.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Samuel Lucas V. Matos\n# Matricula: Nenhuma\n# Quest\u00e3o: Acordes - CC (UFCG)\n\ndef acordes(m1, m2):\n\tm3 = []\n\tfor i in range(len(m1)):\n\t\tm3.append(m1[i])\n\n\tfor j in range(len(m2)):\n\t\tif m2[j] not in m3:\n\t\t\tm3.append(m2[j])\n\treturn m3\n\nm1 = ['c', 'd', 'dm']\nm2 = ['c', 'a']\nassert acordes(m1, m2) == ['c', 'd', 'dm', 'a']\nassert m1 == ['c', 'd', 'dm']\nassert m2 == ['c', 'a']\n\nm1 = ['c', 'd']\nm2 = ['c', 'a']\nassert acordes(m1, m2) == ['c', 'd', 'a']\n",
+      "name": "acordes.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "eb18a63f8a1b741811eb25a8df33df14",
+  "iid": 5852835937779712,
+  "activity_revision": "1.0.0"
+}

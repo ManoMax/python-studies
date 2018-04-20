@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Domingo\n200\n2\n3\n40\n5\n1.5\n12\n",
+      "output": "Dia da semana? Orcamento? R$ Numero de adultos? Numero de criancas? Preco da pizza? R$ Preco do refrigerante? R$ Preco do estacionamento? R$ Preco do ingresso do cinema? R$ ========== Despesas de Domingo ==========\nDespesas com alimentacao: R$ 45.0\nDespesas com cimena: R$ 52.0\nDespesas por pessoa: R$ 19.7\nSaldo disponivel: 101.5\n"
+    }
+  ]
+}

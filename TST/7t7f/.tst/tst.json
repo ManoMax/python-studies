@@ -1,0 +1,12 @@
+{
+  "files": {
+    "hello.py": {
+      "category": "public",
+      "data": "# Hello, World!\n# (c) 2016, Dalton Serey, UFCG\n\nprint \"Hello, World!\"\n"
+    }
+  },
+  "iid": 5827992202772480,
+  "kind": "assignment",
+  "activity_revision": "1.0.0",
+  "name": null
+}

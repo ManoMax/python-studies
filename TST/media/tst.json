@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10.0\n8.0\n6.0\n20\n40\n",
+      "name": "exemplo",
+      "output": "Média Final: 7.6\n"
+    }
+  ]
+}

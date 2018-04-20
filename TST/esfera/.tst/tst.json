@@ -1,0 +1,14 @@
+{
+  "files": {
+    "esfera.py": {
+      "category": "answer",
+      "data": "import math\nraio = float(raw_input())\nvolume = (4 * math.pi * (raio ** 3) ) /3\nprint \"%.2f\" % volume\n",
+      "name": "esfera.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "087ec0029ab2e2c4790bc616e6a633a9",
+  "iid": 4586349738852352,
+  "activity_revision": "1.0.0"
+}

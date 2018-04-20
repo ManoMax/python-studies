@@ -1,0 +1,18 @@
+{
+  "files": {
+    "velho.py": {
+      "category": "answer",
+      "data": "nome1 = raw_input()\ndia1 = int(raw_input())\nmes1 = int(raw_input())\nano1 = int(raw_input())\n\nnome2 = raw_input()\ndia2 = int(raw_input())\nmes2 = int(raw_input())\nano2 = int(raw_input())\n\nif ano1 > ano2:\n\tprint nome2\nelif ano2 > ano1:\n\tprint nome1\nelse:\n\tif mes1 > mes2:\n\t\tprint nome2\n\telif mes2 > mes1:\n\t\tprint nome1\n\telse:\n\t\tif dia1 > dia2:\n\t\t\tprint nome2\n\t\telif dia2 > dia1:\n\t\t\tprint nome1\n\t\telse:\n\t\t\tprint \"nenhuma\"\n",
+      "name": "velho.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 25,\n      \"vhalstead\": 54.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "4eab80d13701d398b71c068da9dafdfe",
+  "iid": 5555286039330816,
+  "activity_revision": "1.0.2"
+}

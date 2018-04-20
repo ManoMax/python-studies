@@ -1,0 +1,18 @@
+{
+  "files": {
+    "inteiros_positivos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Inteiros Positivos Divis\u00edveis\n\nA = int(raw_input())\nB = int(raw_input())\nK = int(raw_input())\n\nfor i in range(1, K+1):\n\tif i % A == 0 and i % B ==0:\n\t\tprint i\n",
+      "name": "inteiros_positivos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 6,\n      \"vhalstead\": 68.53,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "45b3ca0aca89b4c73d8bb999fca14972",
+  "iid": 5043145683238912,
+  "activity_revision": "1.1.0"
+}

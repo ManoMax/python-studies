@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nmaior_palavra = getattr(undertest, 'maior_palavra', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert maior_palavra(\"eu acredito que seja um bom exemplo\") == \"acredito\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "maior_palavra.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Maior Palavra de Uma Frase - CC (UFCG)\n\ndef maior_palavra(phrase):\n\tlarger = 0\n\tseparate = phrase.split()\n\tfor i in range(len(separate)):\n\t\tword = separate[i]\n\t\tcont = 0\n\t\tfor i in range(len(word)):\n\t\t\tcont += 1\n\t\t\tif cont >= larger:\n\t\t\t\tlarger = cont\n\t\t\t\tchoice = word\n\treturn choice\n\nassert maior_palavra(\"eu acredito que seja um bom exemplo\") == \"acredito\"\n",
+      "name": "maior_palavra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cb0909f5cc291252285660f6c59f207b",
+  "iid": 6440523426430976,
+  "activity_revision": "1.0.0"
+}

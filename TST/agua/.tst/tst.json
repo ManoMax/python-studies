@@ -1,0 +1,14 @@
+{
+  "files": {
+    "agua.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nimport math\n\nvelocidade = float(raw_input())\nraio = float(raw_input()) / 2\ntempo = float(raw_input())\narea = math.pi * raio**2\nagua = velocidade * raio * tempo\n\nprint \"Quantidade de \u00e1gua = %f litros.\" % agua\n",
+      "name": "agua.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6fea295aa23b90787536c6a53585245f",
+  "iid": 5934154768187392,
+  "activity_revision": "1.0.1"
+}

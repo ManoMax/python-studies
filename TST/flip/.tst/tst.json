@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nflip = getattr(undertest, 'flip', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [1, 2, 3, 4, 5, 6, 7]\n        assert flip(l1, 2, 5) == None\n        assert l1 == [1, 2, 6, 5, 4, 3, 7]\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "flip.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Atividade: Flip / CC - UFCG\n\ndef flip(l1, i, j):\n\tfor x in range(len(l1)):\n\t\tif x >= i and x <= j:\n\t\t\tl1[i], l1[j] = l1[j], l1[i]\n\t\t\ti += 1\n\t\t\tj -= 1\n\nl1 = [1, 2, 3, 4, 5, 6, 7]\nassert flip(l1, 2, 5) == None\nassert l1 == [1, 2, 6, 5, 4, 3, 7]\n",
+      "name": "flip.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ee5fe8b29d75320cd04454e26594a401",
+  "iid": 5038358875078656,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "maiorais.py": {
+      "category": "answer",
+      "data": "Campinense = int(raw_input())\nTreze = int(raw_input())\n\nif Campinense > Treze:\n\tprint \"Campinense\"\nelif Treze > Campinense:\n\tprint \"Treze\"\nelse:\n\tprint \"Empate\"\n",
+      "name": "maiorais.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 9.51,\n      \"header\": 0\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9a993cc53e8af75c80b230ff30a4d171",
+  "iid": 6114635199545344,
+  "activity_revision": "1.1.1"
+}

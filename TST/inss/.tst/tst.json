@@ -1,0 +1,18 @@
+{
+  "files": {
+    "inss.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nsalario = float(raw_input())\nempregador = salario * 0.12\n\nif salario <= 1317.07:\n\tempregado = salario * 0.08\n\tprint \"O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregador \u00e9 de R$ %.2f\" % empregador\n\tprint \"O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregado \u00e9 de R$ %.2f\" % empregado\nelif 1317.08 <= salario <= 2195.12:\n\tempregado = salario * 0.09\n\tprint \"O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregador \u00e9 de R$ %.2f\" % empregador\n\tprint \"O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregado \u00e9 de R$ %.2f\" % empregado\nelif salario > 2195.12:\n\tempregado = salario * 0.11\n\tprint \"O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregador \u00e9 de R$ %.2f\" % empregador\n\tprint \"O valor da contribui\u00e7\u00e3o do INSS a ser pago pelo empregado \u00e9 de R$ %.2f\" % empregado\n",
+      "name": "inss.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 2,\n      \"lloc\": 10,\n      \"vhalstead\": 93.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5fe403d79173cc029e1df250e90c1b1c",
+  "iid": 6351530294771712,
+  "activity_revision": "1.0.5"
+}

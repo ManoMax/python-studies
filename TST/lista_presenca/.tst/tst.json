@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncria_lista_presenca = getattr(undertest, 'cria_lista_presenca', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n\tturmas = [1, 2, 2, 4, 5, 3, 5]\n\tnomes = [\"Maria\", \"Pedro\", \"Carlos\", \"Ana\", \"Carla\", \"Joao\", \"Jose\"]\n\tassert cria_lista_presenca(turmas, nomes, 5) == [\"Carla\", \"Jose\"]\n\tassert turmas == [1, 2, 2, 4, 5, 3, 5]\n\tassert nomes == [\"Maria\", \"Pedro\", \"Carlos\", \"Ana\", \"Carla\", \"Joao\", \"Jose\"]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "lista_presenca.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Lista Presen\u00e7a - CC (UFCG)\n\ndef cria_lista_presenca(turmas, nomes, num):\n\tpresenca = []\n\tfor i in range(len(turmas)):\n\t\tif num == turmas[i]:\n\t\t\tpresenca.append(nomes[i])\n\treturn presenca\n\t\nturmas = [1, 2, 2, 4, 5, 3, 5]\nnomes = [\"Maria\", \"Pedro\", \"Carlos\", \"Ana\", \"Carla\", \"Joao\", \"Jose\"]\nassert cria_lista_presenca(turmas, nomes, 5) == [\"Carla\", \"Jose\"]\n",
+      "name": "lista_presenca.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0dc6473fa5514ae3f296b504e2f3982b",
+  "iid": 6093111038050304,
+  "activity_revision": "1.0.0"
+}

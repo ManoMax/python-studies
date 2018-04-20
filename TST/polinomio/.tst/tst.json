@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nvalor_polinomio = getattr(undertest, 'valor_polinomio', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert valor_polinomio([-5, 0, 2, 0, 3], 10) == 30195\n        assert valor_polinomio([-5, 0, 2, 0, 3], 2) == 51\n        assert valor_polinomio([-5, 0, 2, 0, 3], 0) == -5\n\n    def test_basico_2(self):\n        assert valor_polinomio([3, 1], 100) == 103\n        assert valor_polinomio([3, 1], 8) == 11\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "polinomio.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: Valor Polin\u00f4mio - CC (UFCG)\n\ndef valor_polinomio(poli, valor):\n\tresult = 0\n\tx = len(poli)\n\tfor i in range(len(poli)-1, -1, -1):\n\t\tif poli[i] != 0:\n\t\t\tresult += int(poli[i]) * valor**i\n\treturn result\n\nassert valor_polinomio([-5, 0, 2, 0, 3], 2) == 51\n",
+      "name": "polinomio.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2b4a2b9d374f382b7ba3002d6262fe15",
+  "iid": 5314313208201216,
+  "activity_revision": "1.0.0"
+}

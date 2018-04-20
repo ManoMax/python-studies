@@ -1,0 +1,18 @@
+{
+  "files": {
+    "email.perdido.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Email Perdido - CC (UFCG)\n\ndef encontra_email_perdido(l1, l2):\n\tfor i in range(len(l1)):\n\t\tif l1[i] not in l2:\n\t\t\treturn l1[i]\n\nl1 = ['oi', 'ola', 'paguei']\nl2 = ['ola', 'paguei']\nassert encontra_email_perdido(l1,l2) == 'oi'\n",
+      "name": "email.perdido.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_email_perdido = getattr(undertest, 'encontra_email_perdido', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['oi', 'ola', 'paguei']\n        l2 = ['ola', 'paguei']\n        assert encontra_email_perdido(l1,l2) == 'oi'\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "dd69a6e3b5cdce0a21c41e158dc19d27",
+  "iid": 5319728222437376,
+  "activity_revision": "1.1.1"
+}

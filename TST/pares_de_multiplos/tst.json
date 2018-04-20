@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "3 7 4 8 12 6 4 5\n2\n",
+      "type": "io",
+      "name": "exemplo 1",
+      "output": "2 par(es)\n4 8\n12 6\n"
+    },
+    {
+      "category": "public",
+      "input": "5 2 3 9 27 7 2 6 4\n3\n",
+      "type": "io",
+      "name": "exemplo 2",
+      "output": "3 par(es)\n3 9\n9 27\n2 6\n"
+    }
+  ]
+}

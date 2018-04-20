@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nunico = getattr(undertest, 'unico', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       assert unico(\"aa***xxxzzb+++\") == \"a*xzb+\"\n\n   def test_string_vazia(self):\n       assert unico(\"\") == \"\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "unico.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: \u00danico - CC (UFCG)\n\ndef unico(string):\n\tdados = []\n\tsaida = ''\n\tfor i in range(len(string)):\n\t\tif not string[i] in dados:\n\t\t\tsaida += string[i]\n\t\t\tdados.append(string[i])\n\treturn saida\n\t\nassert unico(\"aa***xxxzzb+++\") == \"a*xzb+\"\nassert unico(\"\") == \"\"\n",
+      "name": "unico.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "15e23f055313e64fc8efe10e9f94d9dd",
+  "iid": 5308696464719872,
+  "activity_revision": "2.0.0"
+}

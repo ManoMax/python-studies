@@ -1,0 +1,18 @@
+{
+  "files": {
+    "convertendo.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max\n# Matricula: 117110060\n# Atividade Convertendo um N\u00famero Octal em um n\u00famero Decimal\n\nnum = raw_input()\n\nresultado = 0\ntotal = 0\naux = 0\n\nfor algarismo in range(len(num)-1,-1,-1):\n    resultado = int(num[aux]) * (8 ** algarismo)\n    print \"%s * 8^%d = %d\" % (num[aux], algarismo, resultado)\n    total += resultado\n    aux += 1\n\nprint \"%s(8) = %d(10)\" % (num, total)\n",
+      "name": "convertendo.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ff09ed6e46d506114011de4b3bba1bd8",
+  "iid": 4834485031927808,
+  "activity_revision": "1.1.2"
+}

@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "vicente\nbianca\ncarlos\nantonio\nzelia\n####\n",
+      "name": "exemplo1",
+      "output": "* vicente\n----\n* bianca\nvicente\n----\nbianca\n* carlos\nvicente\n----\n* antonio\nbianca\ncarlos\nvicente\n----\nantonio\nbianca\ncarlos\nvicente\n* zelia\n----\n"
+    }
+  ]
+}

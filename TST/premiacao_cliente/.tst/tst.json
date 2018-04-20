@@ -1,0 +1,18 @@
+{
+  "files": {
+    "premiacao_cliente.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Premia\u00e7\u00e3o Cliente - CC (UFCG)\n\ncont_joao = 0\ncont_julio = 0\nsoma_joao = 0\nsoma_julio = 0\n\nwhile True:\n\tentrada = raw_input()\n\tdados = entrada.split()\n\tif entrada == 'fim':\n\t\tprint \"N\u00e3o houve vencedor.\"\n\t\tbreak\n\tnome = dados[0]\n\tvalor = float(dados[1])\n\tif nome == 'joao':\n\t\tcont_joao += 1\n\t\tsoma_joao += valor\n\telif nome == 'julio':\n\t\tcont_julio += 1\n\t\tsoma_julio += valor\n\tdados = []\n\tif cont_joao > 2:\n\t\tprint \"joao foi o vencedor. Comprou mais de duas vezes no per\u00edodo.\"\n\t\tbreak\n\telif cont_julio > 2:\n\t\tprint \"julio foi o vencedor. Comprou mais de duas vezes no per\u00edodo.\"\n\t\tbreak\n\tif soma_joao >= 2000:\n\t\tprint \"joao foi o vencedor. Comprou mais R$ 2000.00 no per\u00edodo.\"\n\t\tbreak\n\telif soma_julio >= 2000:\n\t\tprint \"julio foi o vencedor. Comprou mais R$ 2000.00 no per\u00edodo.\"\n\t\tbreak\n",
+      "name": "premiacao_cliente.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 10,\n      \"pep8\": 1,\n      \"lloc\": 31,\n      \"vhalstead\": 155.59,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1d80d06c41a4aba1749f81f2f86f4ffb",
+  "iid": 5066275088760832,
+  "activity_revision": "1.1.2"
+}

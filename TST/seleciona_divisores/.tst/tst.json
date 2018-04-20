@@ -1,0 +1,19 @@
+{
+  "files": {
+    "seleciona_divisores.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Seleciona Divisores em uma Lista - CC (UFCG)\n\ndef filtra_divisores(lista):\n\tfor i in range(len(lista)-1, -1, -1):\n\t\tnum = str(lista[i])\n\t\tsoma = 0\n\t\tfor j in range(len(num)):\n\t\t\tsoma += int(num[j])\n\t\tif lista[i] % soma != 0:\n\t\t\tlista.pop(i)\n\t\nlista1 = [333, 121, 81]\nassert filtra_divisores(lista1) == None\nassert lista1 == [333,81]\n",
+      "name": "seleciona_divisores.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nfiltra_divisores = getattr(undertest, 'filtra_divisores', None)\n\nclass PublicTests(unittest.TestCase):\n\n\n   def test_exemplo(self):\n       lista1 = [333, 121, 81]\n       assert filtra_divisores(lista1) == None\n       assert lista1 == [333,81]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6daed37b20ecfe7ea773b7173b1c4afe",
+  "iid": 5250352421011456,
+  "activity_revision": "1.0.0"
+}

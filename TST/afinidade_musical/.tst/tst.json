@@ -1,0 +1,18 @@
+{
+  "files": {
+    "afinidade_musical.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Afinidade Musical - CC (UFCG)\n\ndef tem_afinidade(l1, l2):\n\tcont = 0\n\tfor i in range(len(l2)):\n\t\tif l2[i] in l1:\n\t\t\tcont += 1\n\tif cont >= 3:\n\t\treturn True\n\telse:\n\t\treturn False\n\nl1 = ['zeze', 'bruno e marrone', 'joao', 'pedro', 'u2']\nl2 = ['zeze', 'joao', 'u2', 'jquest']\nassert tem_afinidade(l1, l2) == True\n",
+      "name": "afinidade_musical.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ntem_afinidade = getattr(undertest, 'tem_afinidade', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['zeze', 'bruno e marrone', 'joao', 'pedro', 'u2']\n        l2 = ['zeze', 'joao', 'u2', 'jquest']\n        assert tem_afinidade(l1, l2) == True\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "932fa8d899caa6d329661b3afc0fba7a",
+  "iid": 6361328658677760,
+  "activity_revision": "1.0.1"
+}

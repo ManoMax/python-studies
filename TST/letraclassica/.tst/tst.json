@@ -1,0 +1,18 @@
+{
+  "files": {
+    "letra_classica.py": {
+      "category": "answer",
+      "data": "palavra = str(raw_input())\n\nfor i in palavra:\n\tif i == \"a\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"e\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"i\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"o\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"u\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"A\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"E\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"I\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"O\":\n\t\tprint \"<%s> sim\" % i\n\telif i == \"U\":\n\t\tprint \"<%s> sim\" % i\n\telse:\n\t\tprint \"<%s> nao\" % i\n",
+      "name": "letra_classica.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 25.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f6da42d9ea9f8291dfa540244d7a46bc",
+  "iid": 5779363073097728,
+  "activity_revision": "1.0.2"
+}

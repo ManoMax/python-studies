@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_digitos_verificacao = getattr(undertest, 'calcula_digitos_verificacao', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_digitos_verificacao('153245875') == '40'\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "verifica_cpf.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: D\u00edgitos de Verifica\u00e7\u00e3o do CPF - CC (UFCG)\n\ndef calcula_digitos_verificacao(cpf):\n\tsoma = 0\n\tcont = 1\n\tfor i in range(len(cpf)-1, -1, -1):\n\t\tcont += 1\n\t\tmult = int(cpf[i]) * cont\n\t\tsoma += mult\n\t\tif i == 0:\n\t\t\tresult = (10 * soma) % 11\n\tif result != 10:\n\t\tcpf += str(result)\n\telse:\n\t\tresult = 0\n\t\tcpf += '0'\n\t\t\n\tcont = 1\n\tsoma = 0\n\tfor j in range(len(cpf)-1, -1, -1):\n\t\tcont += 1\n\t\tmult = int(cpf[j]) * cont\n\t\tsoma += mult\n\t\tif j == 0:\n\t\t\tresult2 = (soma * 10) % 11\n\t\n\tfinal = str(result) + str(result2)\n\treturn final\n\t\nassert calcula_digitos_verificacao('153245875') == '40'\n",
+      "name": "verifica_cpf.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ba774659790a9cb8182a145d928be59b",
+  "iid": 6463596393398272,
+  "activity_revision": "1.0.1"
+}

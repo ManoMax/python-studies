@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pares_de_multiplos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Matos\n# Matricula: 117110060\n# Atividade: Pares de M\u00faltiplos\n\nsequencia = raw_input().split()\nrelacao = int(raw_input())\ninteiro = []\ncontador = 0\n\nfor i in sequencia:\n\tnum = int(i)\n\tinteiro.append(num)\n\nfor num in range(0, len(inteiro)-1):\n\tif inteiro[num] * relacao == inteiro[num+1]:\n\t\tcontador += 1\n\tif float(inteiro[num]) / relacao == inteiro[num+1]:\n\t\tcontador += 1\nprint \"%s par(es)\" % contador\n\t\t\nfor num in range(0, len(inteiro)-1):\n\n\tif inteiro[num] * relacao == inteiro[num+1]:\n\t\tprint inteiro[num], inteiro[num+1]\n\tif float(inteiro[num]) / relacao == inteiro[num+1]:\n\t\tprint inteiro[num], inteiro[num+1]\n",
+      "name": "pares_de_multiplos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a629a7c049c5c7d93331437c0a1f6dce",
+  "iid": 5586116925194240,
+  "activity_revision": "1.0.1"
+}

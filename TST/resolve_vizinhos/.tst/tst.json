@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nresolve_vizinhos = getattr(undertest, 'resolve_vizinhos', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n        seq = [6,2,4,4,9,1,0]\n        resolve_vizinhos(seq)\n        assert seq == [6,2,5,4,9,1,0]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "resolve_vizinhos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Atividade: Resolve Vizinhos / CC - UFCG\n\ndef resolve_vizinhos(seq):\n\ttroca = True\n\twhile troca:\n\t\ttroca = False\n\t\t\n\t\tfor i in range(1, len(seq)-1):\n\t\t\tif seq[i] == seq[i-1]:\n\t\t\t\tseq[i-1] += 1\n\t\t\t\t\n\t\t\t\tif seq[i-1] == seq[i-2]:\n\t\t\t\t\tseq[i-1] += 1\n\t\t\t\ttroca = True\n\treturn seq\n\t\t\nseq = [1,2,5,5,8,4]\nassert resolve_vizinhos(seq) == [1,2,6,5,8,4]\n\nseq = [1,6,5,5,8,4]\nassert resolve_vizinhos(seq) == [1,6,7,5,8,4]\n\nseq = [1,6,5,5,5,8,4]\nassert resolve_vizinhos(seq) == [1,6,7,6,5,8,4]\n",
+      "name": "resolve_vizinhos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bf2472f80aa1becaaca9c59a558bf9c9",
+  "iid": 4511727165112320,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "vetor_por_escalar.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Samuel Lucas V. Matos\n# Matricula: Nenhuma\n# Quest\u00e3o: Acordes - CC (UFCG)\n\ndef altera_vetor_por_escalar(vetor, escalar):\n\tfor i in range(len(vetor)):\n\t\tvetor[i] = vetor[i] * escalar\n\nvetor_1 = [1, 2, 3]\nassert altera_vetor_por_escalar(vetor_1, -1) == None\nassert vetor_1 == [-1, -2, -3]\nassert altera_vetor_por_escalar(vetor_1, 2) == None\nassert vetor_1 == [-2, -4, -6]\n",
+      "name": "vetor_por_escalar.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\naltera_vetor_por_escalar = getattr(undertest, 'altera_vetor_por_escalar', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n       vetor_1 = [1, 2, 3]\n       assert altera_vetor_por_escalar(vetor_1, -1) == None\n       assert vetor_1 == [-1, -2, -3]\n       assert altera_vetor_por_escalar(vetor_1, 2) == None\n       assert vetor_1 == [-2, -4, -6]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6d6cd4b3916d70c03646d12ae25454fa",
+  "iid": 5793854762516480,
+  "activity_revision": "2.0.2"
+}

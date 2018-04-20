@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nminmax_sort = getattr(undertest, 'minmax_sort', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert  minmax_sort([7, 4, 8, 1, 2, 3]) == [[1, 4, 3, 7, 2, 8], [1, 2, 3, 4, 7, 8], [1, 2, 3, 4, 7, 8]]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "mm_sort.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Atividade: MinMax Sort = Selection Sort Duplicado - CC (UFCG)\n\ndef copia(seq):\n\tcopia = []\n\tfor i in range(len(seq)):\n\t\tcopia.append(seq[i])\n\treturn copia\n\ndef minmax_sort(seq):\n\tcont = len(seq)\n\tsaida = []\n\tfor i in range(len(seq) / 2):\n\t\tmaior = seq[i]\n\t\tmenor = seq[i]\n\t\tup, down = False, False\n\t\t\n\t\tfor j in range(i+1, len(seq)-i):\n\t\t\taux = seq[j]\n\t\t\tif aux < menor:\n\t\t\t\ti_menor = j\n\t\t\t\tmenor = aux\n\t\t\t\tdown = True\n\t\t\tif aux >= maior:\n\t\t\t\ti_maior = j\n\t\t\t\tmaior = aux\n\t\t\t\tup = True\n\t\t\t\t\n\t\tif down:\n\t\t\tseq[i], seq[i_menor] = seq[i_menor], seq[i]\n\t\tif up:\n\t\t\tseq[j], seq[i_maior] = seq[i_maior], seq[j] \n\t\tcont -= 1\n\t\tsaida.append(copia(seq))\n\treturn saida\n\t\nassert minmax_sort([7, 4, 8, 1, 2, 3]) == [[1, 4, 3, 7, 2, 8],\n                                           [1, 2, 3, 4, 7, 8],\n                                           [1, 2, 3, 4, 7, 8]]\n\n",
+      "name": "mm_sort.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e50d394131bbfd132fb9cb2835520141",
+  "iid": 5251023509651456,
+  "activity_revision": "1.0.0"
+}

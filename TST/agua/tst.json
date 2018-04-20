@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "0.3\n0.0127\n1800\n",
+      "output": "Quantidade de água = 68.4055096782 litros.\n"
+    }
+  ]
+}

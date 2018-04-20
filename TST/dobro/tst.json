@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\n10\n",
+      "output": "SIM\n"
+    },
+    {
+      "category": "public",
+      "input": "3\n3\n",
+      "output": "NAO\n"
+    },
+    {
+      "category": "public",
+      "input": "5\n",
+      "output": "10\n"
+    }
+  ]
+}

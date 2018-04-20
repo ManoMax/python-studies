@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncesar = getattr(undertest, 'cesar', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert cesar(\"exemplo\", 4) == \"ibiqtps\"\n    \n    def test_exemplo_2(self):\n        assert cesar(\"Exemplo 2!\", 4) == \"Ebiqtps 2!\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "semi_cesar.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Samuel Lucas V. Matos\n# Matricula: Nenhuma\n# Quest\u00e3o: Semi C\u00e9sar - CC (UFCG)\n\ndef cesar(msg, d):\n\tresult = ''\n\tif len(msg) == 0:\n\t\tresult = ''\n\t\t\n\telse:\n\t\tfor i in range(len(msg)):\n\t\t\tletter = msg[i]\n\t\t\t\n\t\t\tfor i in range(len(letter)):\n\t\t\t\tif ord(letter[i]) >= 97 and ord(letter[i]) <= 122:\n\t\t\t\t\t\n\t\t\t\t\tif d >= 0:\n\t\t\t\t\t\tif ord(letter[i]) + d <= 122:\n\t\t\t\t\t\t\tresult += chr(ord(letter[i])+d)\n\t\t\t\t\t\telif ord(letter[i]) + d > 122:\n\t\t\t\t\t\t\tnum = int(ord(letter[i]) + d) - 122\n\t\t\t\t\t\t\tresult += chr(96 + num)\n\t\t\t\t\t\t\t\n\t\t\t\t\telif d < 0:\n\t\t\t\t\t\tif ord(letter[i]) + d < 97:\n\t\t\t\t\t\t\tnum = int(ord(letter[i]) + 26) + d\n\t\t\t\t\t\t\tresult += chr(num)\n\t\t\t\t\t\telse:\n\t\t\t\t\t\t\tresult += chr(ord(letter[i]) + d)\n\t\t\t\t\n\t\t\t\telse:\n\t\t\t\t\tresult += letter[i]\n\treturn result\n\nassert cesar('exemplo', 4) == 'ibiqtps'\nassert cesar('Exemplo 2!', 4) == 'Ebiqtps 2!'\n",
+      "name": "semi_cesar.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "92730a9e419ba41376ca7440b052af80",
+  "iid": 5795708711993344,
+  "activity_revision": "1.0.0"
+}

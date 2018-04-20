@@ -1,0 +1,14 @@
+{
+  "files": {
+    "abaixo_da_media.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Abaixo da m\u00e9dia - CC (UFCG)\n\nN = raw_input()\nsequencia = [N]\nsoma = int(N)\ncontador = 1.\n\nwhile N != \"fim\":\n\tN = raw_input()\n\tif N != \"fim\":\n\t\tsequencia.append(N)\n\t\tsoma += int(N)\n\t\tcontador += 1.\n\t\tmedia = soma / contador\n\t\t\nprint \"%.2f\" % media\n\nfor i in range(len(sequencia)):\n\tif int(sequencia[i]) < media:\n\t\tprint \"%d %d\" % (int(i+1), int(sequencia[i]))\n",
+      "name": "abaixo_da_media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c7d11dc9e329c92a1a7f269ec1e8635d",
+  "iid": 5854740420231168,
+  "activity_revision": "1.0.1"
+}

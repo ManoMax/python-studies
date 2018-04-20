@@ -1,0 +1,18 @@
+{
+  "files": {
+    "menos_acertos.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Quem acertou menos - CC (UFCG)\n\nn = int(raw_input())\nsoma = 0\nmaior_quantidade = 0\naluno = 1\n\nfor i in range(n):\n\terros = raw_input()\n\tfor j in range(len(erros)):\n\t\tif erros[j] == 'f':\n\t\t\tsoma += 1\n\tif soma > maior_quantidade:\n\t\tmaior_quantidade = soma\n\t\taluno = i + 1\n\tsoma = 0\nif n == 0:\n\taluno = 0\n\nprint \"O aluno %d errou %d teste(s).\" % (aluno, maior_quantidade)\n",
+      "name": "menos_acertos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 13,\n      \"vhalstead\": 53.77,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5934b6c6ad115634c1c4e583accb7d94",
+  "iid": 6384116815626240,
+  "activity_revision": "1.0.1"
+}

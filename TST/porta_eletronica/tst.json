@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "R A12345\nR A12345\nP A\nR A00007\nP A\nR B90000\nP B\nR B90001\nP B\nS\n",
+      "output": "2\n3\n1\n2\n"
+    }
+  ]
+}

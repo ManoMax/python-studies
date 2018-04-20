@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "\n",
+      "type": "io",
+      "name": "exemplo 1",
+      "output": "Hello, World!\n"
+    }
+  ]
+}

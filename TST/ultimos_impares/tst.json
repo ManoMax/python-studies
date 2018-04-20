@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "5\n9\n3\n1\n6\n4\n7\n",
+      "type": "io",
+      "name": "test_do_exemplo",
+      "output": "8\n"
+    }
+  ]
+}

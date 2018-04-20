@@ -1,0 +1,18 @@
+{
+  "files": {
+    "dobro.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nnumero = int(raw_input())\ndobro = int(raw_input())\n\nif dobro == numero * 2 or numero == dobro * 2:\n\tprint \"SIM\"\nelse:\n\tprint \"NAO\"\n",
+      "name": "dobro.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 2,\n      \"lloc\": 6,\n      \"vhalstead\": 49.83,\n      \"header\": 9\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d689f0da3e1bf75e9bf53ceeeb251ba7",
+  "iid": 6426257357012992,
+  "activity_revision": "1.0.3"
+}

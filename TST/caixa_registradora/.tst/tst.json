@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_registradora = getattr(undertest, 'caixa_registradora', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n       assert caixa_registradora([1000.0, 2000.0, 5000.0, 2500.0, 950.0], 2000.0) == [11450.0, 1347.5, 'Lucro']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "caixa_registradora.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Caixa Registradora - CC (UFCG)\n\ndef caixa_registradora(values, objective):\n\tadd = 0\n\tcommission = 0\n\tfor i in range(len(values)):\n\t\tadd += float(values[i])\n\t\t\n\t\tif values[i] < 1000:\n\t\t\tcommission += values[i] * 0.05\n\t\telif values[i] >= 1000 and values[i] < 5000:\n\t\t\tcommission += values[i] * 0.1\n\t\telif values[i] >= 5000:\n\t\t\tcommission += values[i] * 0.15\n\n\t\tgain = add - commission\n\t\tif gain >= objective:\n\t\t\tsituation = 'Lucro'\n\t\telse:\n\t\t\tsituation = 'Prejuizo'\n\t\t\n\t\tresult = [add, commission, situation]\n\treturn result\n\nassert caixa_registradora([1000.0, 2000.0, 5000.0, 2500.0, 950.0], 2000.0) == [11450.0, 1347.5, 'Lucro']\n",
+      "name": "caixa_registradora.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "43b81b85483489286ecb961f06195876",
+  "iid": 5262460604907520,
+  "activity_revision": "1.0.1"
+}

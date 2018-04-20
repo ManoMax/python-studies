@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "E 1\nB 0\n",
+      "output": "Fim de jogo\n"
+    },
+    {
+      "category": "public",
+      "input": "D 2\nD 1\nC 3\nC 1\nC 2\n",
+      "output": "Parabéns, conquista do portal (3, 6)\n"
+    },
+    {
+      "category": "public",
+      "input": "B 1\nD 1\nB 1\n",
+      "output": "Parabéns, conquista do portal (1, -2)\n"
+    }
+  ]
+}

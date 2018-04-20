@@ -1,0 +1,18 @@
+{
+  "files": {
+    "equacoes.py": {
+      "category": "answer",
+      "data": "import math\n\na = int(raw_input())\nb = int(raw_input())\nc = int(raw_input())\n\nDelta = b**2 - (4 * a * c)\nx1 = (-(b) + math.sqrt(abs(Delta))) / (2 * a)\nx2 = (-(b) - math.sqrt(abs(Delta))) / (2 * a)\n\nif Delta < 0:\n\tprint \"sem raizes reais\"\nelif x1 != x2:\n\tprint \"x1 = %.2f\" % x1\n\tprint \"x2 = %.2f\" % x2\nelse:\n\tX = x1\n\tprint \"x = %.2f\" % X\n",
+      "name": "equacoes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 245.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "659380daf55b626bf68628472ac70ab6",
+  "iid": 5226888276475904,
+  "activity_revision": "1.1.2"
+}

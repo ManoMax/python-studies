@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Python\n",
+      "output": "Pyth0n (1 troca(s))\n"
+    },
+    {
+      "category": "public",
+      "input": "ZENIT\n",
+      "output": "Z3N1T (2 troca(s))\n"
+    },
+    {
+      "category": "public",
+      "input": "Abacateiro\n",
+      "output": "Ab4c4t31r0 (5 troca(s))\n"
+    }
+  ]
+}

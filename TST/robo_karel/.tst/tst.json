@@ -1,0 +1,18 @@
+{
+  "files": {
+    "robo_karel.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Karel o Rob\u00f4 - CC (UFCG)\n\nY = 0\nX = 0\nwhile True:\n\tinput_ = raw_input().split()\n\tfunction = input_[0]\n\tmove = input_[1]\n\tif move == '0':\n\t\tprint \"Fim de jogo\"\n\t\tbreak\n\tif function == 'C':\n\t\tY += int(move)\n\telif function == 'B':\n\t\tY -= int(move)\n\telif function == 'D':\n\t\tX += int(move)\n\telif function == 'E':\n\t\tX -= int(move)\n\t\t\t\t\n\tpoint = \"(%.d, %d)\" % (X, Y)\n\tXp = X\n\tYp = Xp + Xp\n\tportal = \"(%.d, %.d)\" % (Xp, Yp)\n\t\n#\tprint point, portal\n\tif point == portal:\n\t\tprint \"Parab\u00e9ns, conquista do portal\", portal\t\n\t\tbreak\n\tYp = -Yp\n\tportal = \"(%.d, %.d)\" % (Xp, Yp)\n\tif point == portal:\n\t\tprint \"Parab\u00e9ns, conquista do portal\", portal\n\t\tbreak\n",
+      "name": "robo_karel.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 225.72,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0606d4dff05181618f2062b445caac21",
+  "iid": 5827841509818368,
+  "activity_revision": "1.0.1"
+}

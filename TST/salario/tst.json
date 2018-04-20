@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "880\n144\n",
+      "output": "Salário Bruto = 880.0\nHora Bruta = 6.11111111111\nDesconto IR = 96.8\nDesconto INSS = 70.4\nDesconto Sindicato = 44.0\nSalário Líquido = 668.8\nHora Líquida = 4.64444444444\n"
+    }
+  ]
+}

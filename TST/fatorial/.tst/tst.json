@@ -1,0 +1,18 @@
+{
+  "files": {
+    "fatorial.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel M. V. Matos\n# Matricula: 117110060\n# Quest\u00e3o: Fatorial - CC (UFCG)\n\nN = raw_input()\nfatorial = int(N)\nnum = int(fatorial)\n\nfor i in range(int(N), 1, -1):\n\tnum = int(fatorial)\n\tfatorial = num * (int(i)-1)\nif int(N) == 0:\n\tfatorial = 1\n\nprint fatorial\n",
+      "name": "fatorial.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 5,\n      \"vhalstead\": 15.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0dd939c535f2a2197ceca898677c39b3",
+  "iid": 5374439059357696,
+  "activity_revision": "1.1.1"
+}

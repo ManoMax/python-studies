@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "zumbi Zeca Recife\n",
+      "output": "2\n"
+    },
+    {
+      "category": "public",
+      "input": "livro cd Software\n",
+      "output": "0\n"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nnegativos_no_fim = getattr(undertest, 'negativos_no_fim', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        fila = [12, -21, -35, 8, 12, 15]\n        assert negativos_no_fim(fila) == None\n        assert fila == [12, 12, 15, 8, -21, -35]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "negativos_no_fim.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Aluno: Gabriel Max Vieira Matos\n# Matricula: 117110060\n# Quest\u00e3o: Negativos no fim - CC (UFCG)\n\ndef negativos_no_fim(fila):\n\tcont = len(fila)-1\n\tfor i in range(len(fila)-1, -1, -1):\n\t\tif fila[i] < 0:\n\t\t\tfila[i], fila[cont] = fila[cont], fila[i]\n\t\t\tcont -= 1\n\nfila = [12, -21, -35, 8, 12, 15]\nassert negativos_no_fim(fila) == None\nassert fila == [12, 12, 15, 8, -21, -35]\n",
+      "name": "negativos_no_fim.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f357df4550c5ceb94b6449862b29118c",
+  "iid": 5238610785730560,
+  "activity_revision": "1.0.0"
+}

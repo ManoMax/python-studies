@@ -1,0 +1,14 @@
+{
+  "files": {
+    "media.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\npeso1 = float(raw_input()) / 100\npeso2 = float(raw_input()) / 100\npeso3 = 1 - (peso1 + peso2)\nmedia = nota1 * peso1 + nota2 * peso2 + nota3 * peso3\nprint \"M\u00e9dia Final: %.1f\" % media\n",
+      "name": "media.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "74609b376c7900b6cf8abbbfe3d7b9cf",
+  "iid": 5837978102398976,
+  "activity_revision": "1.1.1"
+}
