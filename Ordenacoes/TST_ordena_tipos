@@ -1,0 +1,32 @@
+# coding: utf-8
+# Aluno: Gabriel M. V. Matos
+# Matricula: 117110060
+# Atividade: Ordena Tipos - CC (UFCG)
+
+def ordena_tipos(elements):
+	cont = 0
+	for i in range(len(elements)):
+		if elements[i].isdigit():
+			aux = elements[i]
+			elements[i] = elements[cont]
+			elements[cont] = aux
+			cont += 1
+	
+	for j in range(len(elements)-cont):
+		if elements[i].isalpha():
+			aux = elements[i]
+			elements[i] = elements[cont]
+			elements[cont] = aux
+			cont += 1
+	
+	for j in range(len(elements)-cont):
+		if elements[i].isalpha(): break
+		else:
+			aux = elements[i]
+			elements[i] = elements[cont]
+			elements[cont] = aux
+			cont += 1
+	
+	return elements
+	
+assert ordena_tipos(['1a', '2', 'e', '4', '4.4', 'e6', '8']) == ['2', '4', '8', 'e', '1a', '4.4', 'e6']

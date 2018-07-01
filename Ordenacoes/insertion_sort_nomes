@@ -1,0 +1,38 @@
+# coding: utf-8
+# Aluno: Gabriel M. V. Matos
+# Matricula: 117110060
+# Atividade: Agenda Ordenada - CC (UFCG)
+
+def copia(nomes):
+	copia = []
+	for i in range(len(nomes)):
+		copia.append(nomes[i])
+	return copia
+		
+nomes = []
+ultimo = []
+saida = []
+while True:
+	entrada = raw_input()
+	if entrada == '####': break
+	nomes.append(entrada)
+	ultimo.append(entrada)
+	
+	for j in range(len(nomes)-1, 0, -1):
+		if nomes[j] < nomes[j-1]:
+			nomes[j], nomes[j-1] = nomes[j-1], nomes[j]
+	
+	ultimo = copia(nomes)
+	
+	for i in range(len(ultimo)):
+		if ultimo[i] == entrada:
+			ultimo[i] = '* ' + entrada
+	
+	saida.append(ultimo)
+	ultimo = copia(nomes)
+	
+for i in range(len(saida)):
+	lista = saida[i]
+	for m in range(len(lista)):
+		print saida[i][m]
+	print '----'

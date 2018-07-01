@@ -1,0 +1,24 @@
+# coding: utf-8
+# Aluno: Gabriel M. V. Matos
+# Matricula: 117110060
+# Questão: Mais Velhos Primeiro - CC (UFCG)
+
+row = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]
+cont = 0
+
+for i in range(len(row)):
+	if row[i] >= 60:
+		aux = row[i]
+		row[i] = row[cont]
+		row[cont] = aux
+		cont += 1
+print row
+
+cont = 0
+for i in range(len(row)):
+	if row[i] >= 60:
+		row[i], row[cont] = row[cont], row[i]
+		cont += 1
+print row
+
+# assert row == [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34]

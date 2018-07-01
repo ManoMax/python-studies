@@ -1,0 +1,29 @@
+# coding: utf-8
+# Aluno: Gabriel M. V. Matos
+# Matricula: 117110060
+# Atividade: Primeiro Maior - CC (UFCG)
+
+def primeiro_menor(num, numeros):
+	menor = -1
+	for i in range(len(numeros)):
+		if numeros[i] < num:
+			menor = i
+			break
+	return menor
+	
+def main():
+	nums = map(int,raw_input().split())
+	num = int(raw_input())
+	indice = primeiro_menor(num, nums)
+	saida = nums[indice]
+	if indice == -1:
+		print "sem menores que", num
+	else:
+		print "primeiro menor que %d: %d" % (num, saida)
+
+if __name__ == "__main__":
+	main()
+
+nums = [7, 5, 3, 9, 11, 8]
+assert primeiro_menor(4, nums) == 2
+assert primeiro_menor(3, nums) == -1
