@@ -4,4 +4,4 @@ Material de Estudo sobre Lógica Programacional utilizando Python.
 
 Agradecimentos ao Professor:
 
-° @daltonserey (https://github.com/daltonserey)
+° [@daltonserey](https://github.com/daltonserey)
