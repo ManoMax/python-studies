@@ -1,5 +1,5 @@
 # 🐍 Python Studies
-### Universidade Federal de Compina Grande - PB
+### Universidade Federal de Campina Grande - PB
 ##### Laboratório de Programacao 1 e Análise e Técnica De Algoritmos
 
 Material de Estudo sobre Lógica Programacional utilizando Python.
