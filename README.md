@@ -1,7 +1,13 @@
-🐍 Laboratório de Programacao 1 (Python)
+# 🐍 Python Studies
+### Universidade Federal de Compina Grande - PB
+##### Laboratório de Programacao 1 e Análise e Técnica De Algoritmos
 
 Material de Estudo sobre Lógica Programacional utilizando Python.
 
-Agradecimentos ao Professor:
+<p><i>
+  
+>*Author: [@ManoMax](https://github.com/ManoMax)*
+>
+> *Agradecimentos ao Professor: [@daltonserey](https://github.com/daltonserey)*
 
-° [@daltonserey](https://github.com/daltonserey)
+</i></p>
